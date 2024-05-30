@@ -34,6 +34,7 @@ body:
   - type: dropdown
     id: Rversion
     attributes:
+      label: "R version"
       description: What version of R are you running?
       multiple: false
       options:
@@ -62,6 +63,7 @@ body:
   - type: dropdown
     id: Python-Version
     attributes:
+      label: "Python version"
       description: What version of Python are you running?
       multiple: false
       options:
