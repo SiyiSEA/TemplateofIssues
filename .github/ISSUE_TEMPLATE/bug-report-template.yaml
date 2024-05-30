@@ -31,22 +31,50 @@ body:
       placeholder: In order to repeat this bug you can...
     validations:
       required: false
-  - type: input
+    - type: dropdown
     id: Rversion
     attributes:
       label: R Version
-      description: Specify the R version you've used if possible
-      placeholder: 4.2.1 (2022-06-23)
+      description: What version of R are you running?
+      multiple: false
+      options:
+        - 4.4.0 (April, 2024)
+        - 4.3.3 (February, 2024)
+        - 4.3.2 (October, 2023)
+        - 4.3.1 (June, 2023)
+        - 4.3.0 (April, 2023)
+        - 4.2.3 (March, 2023)
+        - 4.2.2 (October, 2022)
+        - 4.2.1 (June, 2022)
+        - 4.2.0 (April, 2022)
+        - 4.1.3 (March, 2022)
+        - 4.1.2 (November, 2021)
+        - 4.1.1 (August, 2021)
+        - 4.1.0 (May, 2021)
+        - 4.0.5 (March, 2021)
+        - 4.0.4 (February, 2021)
+        - 4.0.3 (October, 2020)
+        - 4.0.2 (June, 2020)
+        - 4.0.1 (June, 2020)
+        - 4.0.0 (April, 2020)
+        - Older than 4.0.0
     validations:
-      required: false
-  - type: input
-    id: Pythonversion
+      required: true
+  - type: dropdown
+    id: Python Version
     attributes:
-      label: Python Version
-      description: Specify the Python version you've used if possible
-      placeholder: 3.11.5 (2023-08-24)
-    validations:
-      required: false
+      label: What version of Python are you running?
+      multiple: false
+      options:
+        - 3.12
+        - 3.11
+        - 3.10
+        - 3.9
+        - 3.7
+        - 3.6
+        - 3.5
+        - 3.4
+        - Older than 3.4
   - type: textarea
     id: logs
     attributes:
