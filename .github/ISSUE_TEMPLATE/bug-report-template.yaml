@@ -34,7 +34,6 @@ body:
   - type: dropdown
     id: Rversion
     attributes:
-      label: R Version
       description: What version of R are you running?
       multiple: false
       options:
@@ -61,9 +60,9 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: Python Version
+    id: Python-Version
     attributes:
-      label: What version of Python are you running?
+      description: What version of Python are you running?
       multiple: false
       options:
         - 3.12
