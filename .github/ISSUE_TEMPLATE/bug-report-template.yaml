@@ -31,7 +31,7 @@ body:
       placeholder: In order to repeat this bug you can...
     validations:
       required: false
-    - type: dropdown
+  - type: dropdown
     id: Rversion
     attributes:
       label: R Version
@@ -70,6 +70,7 @@ body:
         - 3.11
         - 3.10
         - 3.9
+        - 3.8
         - 3.7
         - 3.6
         - 3.5
