@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: GoDMC2 Support
+  - name: GoDMC2 Wiki
     url: https://github.com/MRCIEU/EPIC_mQTL/wiki
+    about: Please read the documentation here.
+  - name: GoDMC2 Support
+    url: https://github.com/MRCIEU/EPIC_mQTL/discussions
     about: Please ask and answer questions here.
