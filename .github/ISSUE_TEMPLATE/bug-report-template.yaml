@@ -15,11 +15,63 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
+  - type: dropdown
+    id: module
+    attributes:
+      label: Scripts
+      description: Which script you were running?
+      multiple: true
+      options:
+        - 00-setup_folders.sh
+        - 01-check_data.sh
+        - 02a-snp_data.sh
+        - 02b-convert_snp_format.sh
+        - 03a-methylation_variables.sh
+        - 03b-methylation_adjustment1.sh
+        - 03c-methylation_pcs.sh
+        - 03d-non_genetic_methylation_pcs.sh
+        - 03e-methylation_adjustment2.sh
+        - 03f-convert_methylation_format.sh
+        - 03g-perform_positive_control.sh
+        - 04a-convert_snp_format.sh
+        - 04b-mapper-preparation.sh
+        - 04c-create_mapper_files.sh
+        - 04d-encoding.sh
+        - 04e-single-site-analysis.sh
+        - 04f-mqtl.sh
+        - 06a-interaction_data_processing.sh
+        - 06b-cell_interaction.sh
+        - 07a-vmeQTL_data_preparation.sh
+        - 07b-run_cis_vmeQTL.sh
+        - 08a-genotypeInversion.sh
+        - 08b-inversionmeQTL.sh
+        - 08c-IWAS_phenotype.sh
+        - 08d-mediation_inversion_CpG_phenotype.sh
+        - 09-PRS_EWAS.sh
+        - 10a-gwas_aar.sh
+        - 10b-heritability_aar.sh
+        - 11a-gwas_smoking.sh
+        - 11b-heritability_smoking.sh
+        - 11c-check_compress_data.sh
+        - 14-nc886_gwas.sh
+        - check_upload.sh
+        - godmc_03b_aggregate.sh
+        - godmc_03e_aggregate.sh
+        - godmc_06a.sh
+        - godmc_06b.sh
+        - godmc_06b_run.sh
+        - godmc_07a.sh3
+        - godmc_07b_run.sh
+        - godmc_07b_submit.sh
+        - godmc_07c.sh
+        - godmc_07c_run.sh
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
       label: What happened?
-      description: Also, what did you expect to happen?
+      description: What was the error message? Could you please provide as many details as possible when you run the scripts?
       placeholder: A bug happened when I...
     validations:
       required: true
