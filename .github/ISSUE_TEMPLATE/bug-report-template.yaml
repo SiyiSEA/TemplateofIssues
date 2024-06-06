@@ -72,7 +72,7 @@ body:
     attributes:
       label: What happened?
       description: What was the error message? Could you please provide as many details as possible when you run the scripts?
-      placeholder: A bug happened when I...
+      placeholder: A bug happened when I run the [script]...
     validations:
       required: true
   - type: textarea
@@ -133,5 +133,5 @@ body:
     id: logs
     attributes:
       label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      description: Please copy and paste any relevant log output where you can find in the ${home_directory}/results/. This will be automatically formatted into code, so no need for backticks.
       render: shell
